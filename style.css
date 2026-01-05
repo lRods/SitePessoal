@@ -1,0 +1,360 @@
+:root {
+    --bg: #211a2c;
+    --gradient: #6b1dd826;
+    --gradient-solid: #6b1dd8;
+    --surface: #dadada08;
+    
+    --text-main: #e6edf3;
+    --text-secondary: #e6edf39b;
+    --text-accent: #e6edf3;
+
+    --highlight: #94e36d;
+    --highlight-secondary: #71ce4234;
+
+    --spacing: 7rem;
+}
+
+
+
+/* GLOBAL STYLES */
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text-secondary);
+
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    /* user-select: none; */
+}
+
+header {
+    height: 100vh;
+    width: 40%;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    justify-content: space-between;
+}
+
+main {
+    width: 50%;
+    z-index: 50;
+}
+
+header, main {
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
+}
+
+#total {
+    max-width: 1200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-title {
+    color: var(--text-main);
+    font-family: "Staatliches", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.sub-title {
+    color: var(--text-main);
+    font-family: "Kanit", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    padding-left: 2px;
+}
+
+.section-title {
+    color: var(--text-main);
+    font-family: "Staatliches", sans-serif;
+    margin-bottom: 1rem;
+}
+
+#sobre {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+#formacao {
+    min-height: 100vh;
+}
+
+header h1 {
+    line-height: 1;
+}
+
+header p {
+    padding-left: 2px;
+    padding-right: 40px;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header a {
+    display: flex;
+    width: fit-content;
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-line {
+    display: inline-block;
+    height: 2px;
+    width: 30px;
+    margin-left: 2px;
+    margin-right: 10px;
+    background-color: var(--text-secondary);
+    transition: width 0.4s, background-color 0.3s;
+}
+
+header a:hover,
+header a:hover > .nav-text,
+.active > .nav-text {
+    color: var(--text-accent);
+    transition: color 0.3s; 
+}
+
+header a:hover > .nav-line,
+.active > .nav-line {
+    background-color: var(--text-accent);
+    width: 80px;
+    transition: width 0.4s, background-color 0.3s;
+}
+
+#social-links {
+    margin-top: 3rem;
+}
+
+#social-links a {
+    font-size: 1.7rem;
+    transition: color 0.3s;
+    padding-right: 10px;
+}
+
+section {
+    scroll-margin-top: calc(var(--spacing));
+    margin-top: var(--spacing);
+}
+
+
+
+/* CARDS */
+.inst-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: between;
+    align-items: start;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+.inst-card-header {
+    color: var(--text-main);
+    margin: 0;
+}
+
+.inst-card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inst-card:hover {
+    cursor: default;
+    background-color: var(--surface);
+    box-shadow: inset 0px 1px rgba(236, 236, 236, 0.092);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
+}
+
+.inst-card:hover .inst-card-title,
+.inst-card:hover .inst-card-header span {
+    color: var(--highlight);
+    transition: color 0.3s;
+}
+
+.inst-card-icon {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-right: 2rem;
+}
+
+.inst-card-footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 0.4rem;
+    white-space: nowrap;
+}
+
+.inst-card-footer li {
+    margin-top: 0.3rem;
+}
+
+.tag {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.2rem 0.7rem;
+    border-radius: 20px;
+    color: var(--highlight);
+    background-color: var(--highlight-secondary);
+    user-select: none;
+}
+
+
+
+/* TEXT SELECTION */
+::-moz-selection {
+    color: var(--gradient-solid);
+    background: var(--highlight);
+}
+
+::selection {
+    color: var(--gradient-solid);
+    background: var(--highlight);
+}
+
+
+
+/* OVERLAY GRADIENT  */
+body {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+
+    --gx: 30px;
+    --gy: 30px;
+    --gsize: 800px;
+
+    background: radial-gradient(circle var(--gsize) at var(--gx) var(--gy), var(--gradient), transparent 80%);
+    background-repeat: no-repeat;
+
+    pointer-events: none;
+    user-select: none;
+
+    /* opacity: 0; */
+    transition: opacity 0.25s ease, filter 0.25s ease;
+
+    z-index: 30;
+}
+
+
+
+/* RESPONSIVE */
+#sobre .section-title {
+    display: none;
+}
+
+.flex-direction-bss {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+    .overlay {
+        display: none;
+    }
+
+    .flex-direction-bss {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .container {
+        display: block;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    header {
+        height: auto;
+        width: 100%;
+        position: relative;
+        top: auto;
+        padding-top: calc(var(--spacing) / 2);
+        padding-bottom: calc(var(--spacing) / 2);
+        justify-content: start;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .section-title {
+        position: sticky;
+        box-sizing: border-box;
+        width: 100vw;
+        transform: translateX(-2rem);
+        top: 0;
+        margin-bottom: 0;
+        padding: 1rem 2rem;
+        background-color: rgba(33, 26, 44, 0.80);
+        backdrop-filter: blur(5px);
+        z-index: 999;
+    }
+
+    #sobre .section-title {
+        display: block;
+    }
+
+    #formacao {
+        min-height: auto;
+    }
+
+    #social-links {
+        margin-top: 1rem;
+    }
+
+    .section-title + p {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .inst-card {
+        flex-direction: column;
+    }
+
+    .inst-card-header {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .inst-card-title + span {
+        display: none;
+    }
+}
+

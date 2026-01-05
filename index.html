@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodrigo Maia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="overlay" class="overlay" aria-hidden="true"></div>
+    <div class="container">
+        <div id="total" class="d-flex flex-direction-bss">
+
+            <header class="d-flex flex-column align-items-start">
+                <div>
+                    <h1 class="main-title">Rodrigo Maia</h1>
+                    <h2 class="sub-title">Desenvolvedor Full Stack</h2>
+                    <p class="mb-4 pr-3">
+                        Desenvolvedor de software com foco em aplicações web, backend e integração de sistemas.
+                        Experiência com .NET, JavaScript, bancos de dados relacionais e interesse crescente em cibersegurança.
+                    </p>
+                    <ul class="mt-5">
+                        <li>
+                            <a id="nav-sobre" class="nav-link py-2 active" href="#sobre" onclick="activeNavLink(this)">
+                                <span class="nav-line"></span>
+                                <span class="nav-text fw-medium">SOBRE</span> 
+                            </a>
+                        </li>
+                        <li>
+                            <a id="nav-experiencia" class="nav-link py-2" href="#experiencia" onclick="activeNavLink(this)">
+                                <span class="nav-line"></span>
+                                <span class="nav-text fw-medium">EXPERIÊNCIA</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="nav-formacao" class="nav-link py-2" href="#formacao" onclick="activeNavLink(this)">
+                                <span class="nav-line"></span>
+                                <span class="nav-text fw-medium">FORMAÇÃO</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul id="social-links" class="d-flex align-items-center">
+                    <li>
+                        <a title="LinkedIn" href="https://www.linkedin.com/in/rodrigo-maia-r/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a title="GitHub" href="https://github.com/lrods" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a title="Currículo PDF" href="Curriculo.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+                    </li>
+                </ul>
+            </header>
+            <main>
+                <section id="sobre" nav-id="nav-sobre">
+                    
+                    <h3 class="section-title">Sobre</h3>
+
+                    <p>
+                        Sou um Desenvolvedor Full Stack com sólida experiência na construção e manutenção de aplicações web,
+                        atuando principalmente com desenvolvimento de backend utilizando .NET e ASP.NET Core, bancos de dados relacionais,
+                        e tecnologias modernas de frontend.
+                    </p>
+                    <p>
+                        Trabalho na área há 8 anos e tenho participado de projetos diversos, em várias etapas do ciclo de desenvolvimento de software, desde a análise de requisitos e implementação até a implantação e manutenção. Durante minha carreira, trabalhei com C#, ASP.NET, ASP.NET Core, JavaScript, TypeScript, Angular, SQL Server, MySQL, além de vivência com ambientes Linux, Docker e controle de versão com Git.
+                    </p>
+                    <p>
+                        Atualmente, trabalho integralmente como desenvolvedor, mas também estou aprofundando meus estudos em segurança da informação e defesa cibernética, com foco em defesa ofensiva e ethical hacking. Meu objetivo é aplicar esses conhecimentos para garantir o desenvolvimento seguro de aplicações e a implementação de práticas defensivas eficazes. 
+                    </p>
+                </section>
+                <section id="experiencia" nav-id="nav-experiencia">
+                    
+                    <h3 class="section-title">Experiência</h3>
+
+                    <div class="inst-card">
+                        <div class="inst-card-icon">
+                            <span class="mb-1">2024 – Atual</span>
+                        </div>
+                        <div class="inst-card-body">
+                            <div class="inst-card-header mb-3">
+                                <h5 class="inst-card-title mb-1">BRZ Dataware</h5>
+                                <span class="mx-2">•</span>
+                                <span>Desenvolvedor Full Stack</span>
+                            </div>
+                            <div class="inst-card-main mb-3">
+                                <p>
+                                    Responsável pela análise e desenvolvimento de novos módulos e funcionalidades, além de melhorias e sustentação em um sistema de field service. Atuando também no estudo para migração da aplicação para novas tecnologias e arquiteturas, no front e no backend.
+                                </p>
+                            </div>
+                            <div class="inst-card-footer py-1">
+                                <ul>
+                                    <li><span class="tag">ASP.NET</span></li>
+                                    <li><span class="tag">ASP.NET Core</span></li>
+                                    <li><span class="tag">SQL Server</span></li>
+                                    <li><span class="tag">Telerik</span></li>
+                                    <li><span class="tag">Angular</span></li>
+                                    <li><span class="tag">Git</span></li>
+                                    <li><span class="tag">CI/CD</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inst-card">
+                        <div class="inst-card-icon">
+                            <span class="mb-1">2022 – 2024</span>
+                        </div>
+                        <div class="inst-card-body">
+                            <div class="inst-card-header mb-3">
+                                <h5 class="inst-card-title mb-1">DO'r Consultoria</h5>
+                                <span class="mx-2">•</span>
+                                <span>Desenvolvedor Full Stack</span>
+                            </div>
+                            <div class="inst-card-main mb-3">
+                                <p>
+                                    Responsável pela análise de requisitos e desenvolvimento de melhorias e novas funcionalidades, além da sustentação do sistema de gerenciamento de contratos, também cuidando da integração com outros sistemas que o utilizavam como base. Desenvolvia também diversas automações de processos para o próprio desenvolvimento ou para outras áreas.
+                                </p>
+                            </div>
+                            <div class="inst-card-footer py-1">
+                                <ul>
+                                    <li><span class="tag">ASP.NET</span></li>
+                                    <li><span class="tag">SQL Server</span></li>
+                                    <li><span class="tag">API REST</span></li>
+                                    <li><span class="tag">Git</span></li>
+                                    <li><span class="tag">CI/CD</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inst-card">
+                        <div class="inst-card-icon">
+                            <span class="mb-1">2021 – 2022</span>
+                        </div>
+                        <div class="inst-card-body">
+                            <div class="inst-card-header mb-3">
+                                <h5 class="inst-card-title mb-1">Freelancer Autônomo</h5>
+                                <span class="mx-2">•</span>
+                                <span>Desenvolvedor Web</span>
+                            </div>
+                            <div class="inst-card-main mb-3">
+                                <p>
+                                    Neste período desenvolvi sistemas web e projetos de automação empresarial, tendo a oportunidade de utilizar diferentes tipos de tecnologias, atendendo à necessidade do cliente.
+                                </p>
+                            </div>
+                            <div class="inst-card-footer py-1">
+                                <ul>
+                                    <li><span class="tag">ASP.NET</span></li>
+                                    <li><span class="tag">MySql</span></li>
+                                    <li><span class="tag">Angular</span></li>
+                                    <li><span class="tag">Python</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inst-card">
+                        <div class="inst-card-icon">
+                            <span class="mb-1">2019 – 2021</span>
+                        </div>
+                        <div class="inst-card-body">
+                            <div class="inst-card-header mb-3">
+                                <h5 class="inst-card-title mb-1">Sinqia</h5>
+                                <span class="mx-2">•</span>
+                                <span>Desenvolvedor Web</span>
+                            </div>
+                            <div class="inst-card-main mb-3">
+                                <p>
+                                    Responsável pelo desenvolvimento de melhorias e sustentação do sistema de gerenciamento de contratos, na área de previdência.
+                                </p>
+                            </div>
+                            <div class="inst-card-footer py-1">
+                                <ul>
+                                    <li><span class="tag">ASP.NET</span></li>
+                                    <li><span class="tag">SQL Server</span></li>
+                                    <li><span class="tag">Oracle</span></li>
+                                    <li><span class="tag">Forms</span></li>
+                                    <li><span class="tag">Git</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inst-card">
+                        <div class="inst-card-icon">
+                            <span class="mb-1">2018 – 2019</span>
+                        </div>
+                        <div class="inst-card-body">
+                            <div class="inst-card-header mb-3">
+                                <h5 class="inst-card-title mb-1">BRZ Dataware</h5>
+                                <span class="mx-2">•</span>
+                                <span>Desenvolvedor Web</span>
+                            </div>
+                            <div class="inst-card-main mb-3">
+                                <p>
+                                    Participei do princípio do planejamento até a sustentação do sistema de field service. Responsável por analisar requisitos e desenvolver módulos e funcionalidades completas, seguindo com a sustentação.
+                                </p>
+                            </div>
+                            <div class="inst-card-footer py-1">
+                                <ul>
+                                    <li><span class="tag">ASP.NET</span></li>
+                                    <li><span class="tag">SQL Server</span></li>
+                                    <li><span class="tag">Telerik</span></li>
+                                    <li><span class="tag">Git</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+                <section id="formacao" nav-id="nav-formacao">
+
+                    <h3 class="section-title">Formação</h3>
+
+                    <div class="inst-card">
+                        <div class="inst-card-icon">
+                            <span class="mb-1">2026 – 2028</span>
+                        </div>
+                        <div class="inst-card-body">
+                            <div class="inst-card-header mb-2">
+                                <h5 class="inst-card-title mb-1">Defesa Cibernética</h5>
+                                <span class="mx-2">•</span>
+                                <span>Impacta</span>
+                            </div>
+                            <div class="inst-card-footer py-1">
+                                <ul>
+                                    <li><span class="tag">Cursando</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="inst-card">
+                        <div class="inst-card-icon">
+                            <span class="mb-1">2019 – 2021</span>
+                        </div>
+                        <div class="inst-card-body">
+                            <div class="inst-card-header mb-2">
+                                <h5 class="inst-card-title mb-1">Ciência da Computação</h5>
+                                <span class="mx-2">•</span>
+                                <span>UNIP</span>
+                            </div>
+                            <div class="inst-card-footer py-1">
+                                <ul>
+                                    <li><span class="tag">Parcialmente concluído</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </main>
+        
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9571bee13b.js" crossorigin="anonymous"></script>
+</body>
+</html>
