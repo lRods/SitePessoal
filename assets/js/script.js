@@ -1,3 +1,97 @@
+// Language toggle logic
+let currentLanguage = 'en'; // Default to English
+let originalTexts = new Map(); // Store original textContent and attributes
+
+async function loadTranslations() {
+    try {
+        const response = await fetch('assets/translations.json');
+        return await response.json();
+    } catch (error) {
+        console.error('Error loading translations:', error);
+        return {};
+    }
+}
+
+function storeOriginalTexts() {
+    const elements = document.querySelectorAll('*');
+    elements.forEach(element => {
+        if (element.children.length === 0 && element.textContent.includes('{{')) {
+            originalTexts.set(element, element.textContent);
+        }
+        if (element.hasAttribute('title') && element.getAttribute('title').includes('{{')) {
+            originalTexts.set(element, { text: element.textContent, title: element.getAttribute('title') });
+        }
+    });
+}
+
+function applyTranslations(translations, language) {
+    // First, revert to original texts
+    originalTexts.forEach((original, element) => {
+        if (typeof original === 'string') {
+            element.textContent = original;
+        } else {
+            element.textContent = original.text;
+            element.setAttribute('title', original.title);
+        }
+    });
+
+    // Then apply new translations
+    originalTexts.forEach((original, element) => {
+        if (typeof original === 'string') {
+            element.textContent = original.replace(/\{\{\s*(\w+)\s*\}\}/g, (match, key) => {
+                return translations[key] ? translations[key][language] : match;
+            });
+        } else {
+            element.textContent = original.text.replace(/\{\{\s*(\w+)\s*\}\}/g, (match, key) => {
+                return translations[key] ? translations[key][language] : match;
+            });
+            element.setAttribute('title', original.title.replace(/\{\{\s*(\w+)\s*\}\}/g, (match, key) => {
+                return translations[key] ? translations[key][language] : match;
+            }));
+        }
+    });
+}
+
+function initEntryAnimation() {
+    const targets = [
+        'header h1',
+        'header h2',
+        'header p',
+        '#social-links',
+        'header ul li',
+        '#sobre h3',
+        '#sobre p',
+        '#experiencia h3',
+        '.inst-card',
+        '#formacao h3',
+        '#formacao .inst-card'
+    ];
+
+    const elements = targets
+        .map(selector => Array.from(document.querySelectorAll(selector)))
+        .flat();
+
+    elements.forEach(el => el.classList.add('fade-up-init'));
+    elements.forEach((el, index) => {
+        setTimeout(() => el.classList.add('fade-up-in'), 120 + index * 80);
+    });
+}
+
+async function toggleLanguage() {
+    const translations = await loadTranslations();
+    currentLanguage = currentLanguage === 'en' ? 'pt' : 'en';
+    applyTranslations(translations, currentLanguage);
+    document.getElementById('lang-indicator').textContent = currentLanguage.toUpperCase();
+}
+
+// Load default language on page load
+document.addEventListener('DOMContentLoaded', async () => {
+    storeOriginalTexts();
+    initEntryAnimation();
+    const translations = await loadTranslations();
+    applyTranslations(translations, currentLanguage);
+});
+
 // Active navigation link logic
 function activeNavLink(e) {
     let activeLink = document.querySelector(".active");

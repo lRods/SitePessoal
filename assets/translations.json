@@ -1,0 +1,178 @@
+{
+    "header_description": {
+        "pt": "Desenvolvedor de software com foco em aplicações web, backend e integração de sistemas. Experiência com .NET, JavaScript, bancos de dados relacionais e interesse crescente em cibersegurança.",
+        "en": "Software developer focused on web applications, backend development and system integration. Experience with .NET, JavaScript, relational databases and growing interest in cybersecurity."
+    },
+    "nav_about": {
+        "pt": "SOBRE",
+        "en": "ABOUT"
+    },
+    "nav_experience": {
+        "pt": "EXPERIÊNCIA",
+        "en": "EXPERIENCE"
+    },
+    "nav_education": {
+        "pt": "FORMAÇÃO",
+        "en": "EDUCATION"
+    },
+    "section_about": {
+        "pt": "Sobre",
+        "en": "About"
+    },
+    "about_p1": {
+        "pt": "Sou um Desenvolvedor Full Stack com sólida experiência na construção e manutenção de aplicações web, atuando principalmente com desenvolvimento backend utilizando C#, .NET e ASP.NET Core, além de bancos de dados relacionais e tecnologias modernas de frontend.",
+        "en": "I am a Full Stack Developer with solid experience in building and maintaining web applications, mainly focused on backend development using C#, .NET and ASP.NET Core, along with relational databases and modern frontend technologies."
+    },
+    "about_p2": {
+        "pt": "Trabalho na área há 8 anos e tenho participado de projetos em diferentes etapas do ciclo de desenvolvimento de software, desde a análise de requisitos e implementação até a implantação e manutenção, atuando em ambientes com metodologias ágeis como Scrum. Ao longo da minha carreira, atuei com desenvolvimento de APIs REST, integração de sistemas e evolução de aplicações.",
+        "en": "I have been working in the field for 8 years and have participated in projects across different stages of the software development lifecycle, from requirements analysis and implementation to deployment and maintenance, working in agile environments such as Scrum. Throughout my career, I have worked with REST API development, system integration and application evolution."
+    },
+    "about_p3": {
+        "pt": "Tenho experiência com C#, .NET, ASP.NET e ASP.NET Core, além de JavaScript, TypeScript e Angular no frontend. Também trabalho com bancos de dados como SQL Server e MySQL, e possuo vivência com ambientes Linux, uso de Docker e versionamento com Git. Tenho atuado também na modernização de sistemas legados em .NET Framework para arquiteturas mais atuais com .NET Core.",
+        "en": "I have experience with C#, .NET, ASP.NET and ASP.NET Core, as well as JavaScript, TypeScript and Angular on the frontend. I also work with databases such as SQL Server and MySQL, and have experience with Linux environments, Docker and version control with Git. I have also been involved in modernizing legacy systems from .NET Framework to more modern architectures using .NET Core."
+    },
+    "about_p4": {
+        "pt": "Atualmente, trabalho integralmente como desenvolvedor e venho aprofundando meus estudos em segurança da informação e defesa cibernética, com foco em ethical hacking e desenvolvimento seguro de aplicações.",
+        "en": "Currently, I work full-time as a developer and I am also deepening my studies in information security and cybersecurity, focusing on ethical hacking and secure software development."
+    },
+    "section_experience": {
+        "pt": "Experiência",
+        "en": "Experience"
+    },
+    "exp1_date": {
+        "pt": "2026 – Atual",
+        "en": "2026 – Present"
+    },
+    "exp1_title": {
+        "pt": "CCAB",
+        "en": "CCAB"
+    },
+    "exp1_role": {
+        "pt": "Senior .NET Developer (Contract)",
+        "en": "Senior .NET Developer (Contract)"
+    },
+    "exp1_desc": {
+        "pt": "Atuação no desenvolvimento de um sistema de certificações com Angular no frontend e C# com ASP.NET Core no backend, em um projeto com prazo reduzido voltado à substituição de um sistema legado em descontinuação. Trabalho com criação de novas funcionalidades e telas, integração com plataforma de pagamentos, geração e impressão de relatórios, autenticação via JWT, versionamento com GitHub, gestão de tarefas com Jira e Scrum, além de publicação da aplicação em ambiente AWS.",
+        "en": "Worked on the development of a certification system using Angular on the frontend and C# with ASP.NET Core on the backend, in a time-constrained project aimed at replacing a legacy system being decommissioned. Developed new features and screens, integrated with payment platforms, implemented report generation and printing processes, JWT authentication, version control with GitHub, task management with Jira and Scrum, and deployment in AWS environment."
+    },
+    "exp2_date": {
+        "pt": "2024 – Atual",
+        "en": "2024 – Present"
+    },
+    "exp2_title": {
+        "pt": "BRZ Dataware",
+        "en": "BRZ Dataware"
+    },
+    "exp2_role": {
+        "pt": "Senior .NET Developer",
+        "en": "Senior .NET Developer"
+    },
+    "exp2_desc": {
+        "pt": "Atuação no desenvolvimento, manutenção e evolução de um sistema de Field Service utilizando C# e .NET Framework (ASP.NET MVC), com foco em atender regras de negócio específicas do cliente. Trabalho com novas funcionalidades, sustentação do sistema, frontend com Razor e Telerik, forte atuação em SQL Server com Stored Procedures voltadas à performance e participação na evolução da aplicação para .NET Core.",
+        "en": "Worked on the development, maintenance and evolution of a Field Service system using C# and .NET Framework (ASP.NET MVC), focused on meeting specific business requirements. Responsible for new features, system maintenance, frontend development with Razor and Telerik, strong work with SQL Server using performance-oriented Stored Procedures, and participation in the migration to .NET Core."
+    },
+    "exp3_date": {
+        "pt": "2022 – 2024",
+        "en": "2022 – 2024"
+    },
+    "exp3_title": {
+        "pt": "DO'r Consultoria",
+        "en": "DO'r Consultoria"
+    },
+    "exp3_role": {
+        "pt": "Full Stack .NET Developer",
+        "en": "Full Stack .NET Developer"
+    },
+    "exp3_desc": {
+        "pt": "Atuação no desenvolvimento, manutenção e evolução de um sistema de gerenciamento de contratos na área de planos de saúde, utilizando C# e .NET Framework (ASP.NET MVC). Trabalhei de forma autônoma na sustentação, novas funcionalidades, integrações com APIs e automações de processos, com atuação completa no backend, frontend com Razor, banco SQL Server, CI/CD em Azure e rotina ágil com Scrum e Jira.",
+        "en": "Worked on the development, maintenance and evolution of a contract management system in the healthcare sector using C# and .NET Framework (ASP.NET MVC). Acted autonomously in system maintenance, new features, API integrations and process automation, working across backend, frontend with Razor, SQL Server database, CI/CD in Azure, and agile processes with Scrum and Jira."
+    },
+    "exp4_date": {
+        "pt": "2021 – 2022",
+        "en": "2021 – 2022"
+    },
+    "exp4_title": {
+        "pt": "Freelancer Autônomo",
+        "en": "Freelancer"
+    },
+    "exp4_role": {
+        "pt": "Freelance .NET Developer",
+        "en": "Freelance .NET Developer"
+    },
+    "exp4_desc": {
+        "pt": "Atuação como desenvolvedor freelancer na construção de sistemas web e automações empresariais, atendendo diferentes demandas de clientes. Trabalhei desde a análise de requisitos até a implementação e entrega de soluções sob medida, com foco em aplicações web e automação de processos.",
+        "en": "Worked as a freelance developer building web systems and business automation solutions for different clients. Responsible for requirements analysis, development and delivery of customized solutions focused on web applications and process automation."
+    },
+    "exp5_date": {
+        "pt": "2019 – 2021",
+        "en": "2019 – 2021"
+    },
+    "exp5_title": {
+        "pt": "Sinqia",
+        "en": "Sinqia"
+    },
+    "exp5_role": {
+        "pt": "Junior .NET Developer",
+        "en": "Junior .NET Developer"
+    },
+    "exp5_desc": {
+        "pt": "Atuação no desenvolvimento e sustentação de um sistema de gerenciamento de contratos na área de previdência, voltado para o mercado financeiro. Trabalhei com C# em aplicações Windows Forms, com forte interação com SQL Server e Oracle, além de atuação em equipe utilizando Scrum e Jira.",
+        "en": "Worked on the development and maintenance of a contract management system in the pension sector, within the financial market. Developed applications using C# and Windows Forms, with strong interaction with SQL Server and Oracle databases, working in agile teams using Scrum and Jira."
+    },
+    "exp6_date": {
+        "pt": "2018 – 2019",
+        "en": "2018 – 2019"
+    },
+    "exp6_title": {
+        "pt": "BRZ Dataware",
+        "en": "BRZ Dataware"
+    },
+    "exp6_role": {
+        "pt": "Junior .NET Developer",
+        "en": "Junior .NET Developer"
+    },
+    "exp6_desc": {
+        "pt": "Participação no desenvolvimento de um sistema de Field Service desde as etapas iniciais de planejamento até a implantação e sustentação. Atuei no levantamento de requisitos, criação de módulos e funcionalidades, desenvolvimento com C# e .NET Framework (ASP.NET MVC), frontend com HTML, CSS e JavaScript e modelagem de banco de dados em SQL Server.",
+        "en": "Participated in the development of a Field Service system from initial planning stages to deployment and maintenance. Worked on requirements analysis, module and feature development, backend development using C# and .NET Framework (ASP.NET MVC), frontend with HTML, CSS and JavaScript, and database modeling using SQL Server."
+    },
+    "section_education": {
+        "pt": "Formação",
+        "en": "Education"
+    },
+    "edu1_date": {
+        "pt": "2026 – 2028",
+        "en": "2026 – 2028"
+    },
+    "edu1_title": {
+        "pt": "Defesa Cibernética",
+        "en": "Cyber Defense"
+    },
+    "edu1_institution": {
+        "pt": "Impacta",
+        "en": "Impacta"
+    },
+    "edu1_status": {
+        "pt": "Cursando",
+        "en": "In Progress"
+    },
+    "edu2_date": {
+        "pt": "2019 – 2021",
+        "en": "2019 – 2021"
+    },
+    "edu2_title": {
+        "pt": "Ciência da Computação",
+        "en": "Computer Science"
+    },
+    "edu2_institution": {
+        "pt": "UNIP",
+        "en": "UNIP"
+    },
+    "edu2_status": {
+        "pt": "Parcialmente concluído",
+        "en": "Partially Completed"
+    },
+    "curriculum_title": {
+        "pt": "Currículo PDF",
+        "en": "Resume PDF"
+    }
+}

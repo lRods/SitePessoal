@@ -21,28 +21,27 @@
             <header class="d-flex flex-column align-items-start">
                 <div>
                     <h1 class="main-title">Rodrigo Maia</h1>
-                    <h2 class="sub-title">Desenvolvedor Full Stack</h2>
+                    <h2 class="sub-title">Senior .NET Developer</h2>
                     <p class="mb-4 pr-3">
-                        Desenvolvedor de software com foco em aplicações web, backend e integração de sistemas.
-                        Experiência com .NET, JavaScript, bancos de dados relacionais e interesse crescente em cibersegurança.
+                        {{ header_description }}
                     </p>
                     <ul class="mt-5">
                         <li>
                             <a id="nav-sobre" class="nav-link py-2 active" href="#sobre" onclick="activeNavLink(this)">
                                 <span class="nav-line"></span>
-                                <span class="nav-text fw-medium">SOBRE</span> 
+                                <span class="nav-text fw-medium">{{ nav_about }}</span> 
                             </a>
                         </li>
                         <li>
                             <a id="nav-experiencia" class="nav-link py-2" href="#experiencia" onclick="activeNavLink(this)">
                                 <span class="nav-line"></span>
-                                <span class="nav-text fw-medium">EXPERIÊNCIA</span>
+                                <span class="nav-text fw-medium">{{ nav_experience }}</span>
                             </a>
                         </li>
                         <li>
                             <a id="nav-formacao" class="nav-link py-2" href="#formacao" onclick="activeNavLink(this)">
                                 <span class="nav-line"></span>
-                                <span class="nav-text fw-medium">FORMAÇÃO</span>
+                                <span class="nav-text fw-medium">{{ nav_education }}</span>
                             </a>
                         </li>
                     </ul>
@@ -55,55 +54,93 @@
                         <a title="GitHub" href="https://github.com/lrods" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </li>
                     <li>
-                        <a title="Currículo PDF" href="assets/documents/Curriculo.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+                        <a title="PDF" href="assets/documents/Curriculo.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+                    </li>
+                    <li>
+                        <a id="language-toggle" onclick="toggleLanguage()">
+                            <i class="fa-solid fa-language ms-4 mt-2"></i> <span id="lang-indicator" class="mx-2 mt-1">EN</span>
+                        </a>
                     </li>
                 </ul>
             </header>
             <main>
                 <section id="sobre" nav-id="nav-sobre">
                     
-                    <h3 class="section-title">Sobre</h3>
+                    <h3 class="section-title">{{ section_about }}</h3>
 
                     <p>
-                        Sou um Desenvolvedor Full Stack com sólida experiência na construção e manutenção de aplicações web,
-                        atuando principalmente com desenvolvimento de backend utilizando .NET e ASP.NET Core, bancos de dados relacionais,
-                        e tecnologias modernas de frontend.
+                        {{ about_p1 }}
                     </p>
                     <p>
-                        Trabalho na área há 8 anos e tenho participado de projetos diversos, em várias etapas do ciclo de desenvolvimento de software, desde a análise de requisitos e implementação até a implantação e manutenção. Durante minha carreira, trabalhei com C#, ASP.NET, ASP.NET Core, JavaScript, TypeScript, Angular, SQL Server, MySQL, além de vivência com ambientes Linux, Docker e controle de versão com Git.
+                        {{ about_p2 }}
                     </p>
                     <p>
-                        Atualmente, trabalho integralmente como desenvolvedor, mas também estou aprofundando meus estudos em segurança da informação e defesa cibernética, com foco em defesa ofensiva e ethical hacking. Meu objetivo é aplicar esses conhecimentos para garantir o desenvolvimento seguro de aplicações e a implementação de práticas defensivas eficazes. 
+                        {{ about_p3 }}
+                    </p>
+                    <p>
+                        {{ about_p4 }}
                     </p>
                 </section>
                 <section id="experiencia" nav-id="nav-experiencia">
                     
-                    <h3 class="section-title">Experiência</h3>
+                    <h3 class="section-title">{{ section_experience }}</h3>
 
                     <div class="inst-card">
                         <div class="inst-card-icon">
-                            <span class="mb-1">2024 – Atual</span>
+                            <span class="mb-1">{{ exp1_date }}</span>
                         </div>
                         <div class="inst-card-body">
                             <div class="inst-card-header mb-3">
-                                <h5 class="inst-card-title mb-1">BRZ Dataware</h5>
+                                <h5 class="inst-card-title mb-1">{{ exp1_title }}</h5>
                                 <span class="mx-2">•</span>
-                                <span>Desenvolvedor Full Stack</span>
+                                <span>{{ exp1_role }}</span>
                             </div>
                             <div class="inst-card-main mb-3">
                                 <p>
-                                    Responsável pela análise e desenvolvimento de novos módulos e funcionalidades, além de melhorias e sustentação em um sistema de field service. Atuando também no estudo para migração da aplicação para novas tecnologias e arquiteturas, no front e no backend.
+                                    {{ exp1_desc }}
                                 </p>
                             </div>
                             <div class="inst-card-footer py-1">
                                 <ul>
-                                    <li><span class="tag">ASP.NET</span></li>
+                                    <li><span class="tag">C#</span></li>
                                     <li><span class="tag">ASP.NET Core</span></li>
+                                    <li><span class="tag">Angular</span></li>
+                                    <li><span class="tag">Angular Material</span></li>
+                                    <li><span class="tag">REST API</span></li>
+                                    <li><span class="tag">JWT</span></li>
+                                    <li><span class="tag">GitHub</span></li>
+                                    <li><span class="tag">Jira</span></li>
+                                    <li><span class="tag">Scrum</span></li>
+                                    <li><span class="tag">AWS</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inst-card">
+                        <div class="inst-card-icon">
+                            <span class="mb-1">{{ exp6_date }}</span>
+                        </div>
+                        <div class="inst-card-body">
+                            <div class="inst-card-header mb-3">
+                                <h5 class="inst-card-title mb-1">{{ exp6_title }}</h5>
+                                <span class="mx-2">•</span>
+                                <span>{{ exp2_role }}</span>
+                            </div>
+                            <div class="inst-card-main mb-3">
+                                <p>
+                                    {{ exp2_desc }}
+                                </p>
+                            </div>
+                            <div class="inst-card-footer py-1">
+                                <ul>
+                                    <li><span class="tag">C#</span></li>
+                                    <li><span class="tag">ASP.NET MVC</span></li>
+                                    <li><span class="tag">.NET Core</span></li>
                                     <li><span class="tag">SQL Server</span></li>
+                                    <li><span class="tag">Stored Procedures</span></li>
                                     <li><span class="tag">Telerik</span></li>
-                                    <li><span class="tag">Angular</span></li>
                                     <li><span class="tag">Git</span></li>
-                                    <li><span class="tag">CI/CD</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -111,26 +148,27 @@
 
                     <div class="inst-card">
                         <div class="inst-card-icon">
-                            <span class="mb-1">2022 – 2024</span>
+                            <span class="mb-1">{{ exp3_date }}</span>
                         </div>
                         <div class="inst-card-body">
                             <div class="inst-card-header mb-3">
-                                <h5 class="inst-card-title mb-1">DO'r Consultoria</h5>
+                                <h5 class="inst-card-title mb-1">{{ exp3_title }}</h5>
                                 <span class="mx-2">•</span>
-                                <span>Desenvolvedor Full Stack</span>
+                                <span>{{ exp3_role }}</span>
                             </div>
                             <div class="inst-card-main mb-3">
                                 <p>
-                                    Responsável pela análise de requisitos e desenvolvimento de melhorias e novas funcionalidades, além da sustentação do sistema de gerenciamento de contratos, também cuidando da integração com outros sistemas que o utilizavam como base. Desenvolvia também diversas automações de processos para o próprio desenvolvimento ou para outras áreas.
+                                    {{ exp3_desc }}
                                 </p>
                             </div>
                             <div class="inst-card-footer py-1">
                                 <ul>
-                                    <li><span class="tag">ASP.NET</span></li>
+                                    <li><span class="tag">C#</span></li>
+                                    <li><span class="tag">ASP.NET MVC</span></li>
                                     <li><span class="tag">SQL Server</span></li>
-                                    <li><span class="tag">API REST</span></li>
+                                    <li><span class="tag">API Integration</span></li>
+                                    <li><span class="tag">Azure CI/CD</span></li>
                                     <li><span class="tag">Git</span></li>
-                                    <li><span class="tag">CI/CD</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -138,25 +176,26 @@
 
                     <div class="inst-card">
                         <div class="inst-card-icon">
-                            <span class="mb-1">2021 – 2022</span>
+                            <span class="mb-1">{{ exp4_date }}</span>
                         </div>
                         <div class="inst-card-body">
                             <div class="inst-card-header mb-3">
-                                <h5 class="inst-card-title mb-1">Freelancer Autônomo</h5>
+                                <h5 class="inst-card-title mb-1">{{ exp4_title }}</h5>
                                 <span class="mx-2">•</span>
-                                <span>Desenvolvedor Web</span>
+                                <span>{{ exp4_role }}</span>
                             </div>
                             <div class="inst-card-main mb-3">
                                 <p>
-                                    Neste período desenvolvi sistemas web e projetos de automação empresarial, tendo a oportunidade de utilizar diferentes tipos de tecnologias, atendendo à necessidade do cliente.
+                                    {{ exp4_desc }}
                                 </p>
                             </div>
                             <div class="inst-card-footer py-1">
                                 <ul>
-                                    <li><span class="tag">ASP.NET</span></li>
-                                    <li><span class="tag">MySql</span></li>
-                                    <li><span class="tag">Angular</span></li>
-                                    <li><span class="tag">Python</span></li>
+                                    <li><span class="tag">C#</span></li>
+                                    <li><span class="tag">.NET</span></li>
+                                    <li><span class="tag">Web Development</span></li>
+                                    <li><span class="tag">Automation</span></li>
+                                    <li><span class="tag">MySQL</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -164,26 +203,26 @@
 
                     <div class="inst-card">
                         <div class="inst-card-icon">
-                            <span class="mb-1">2019 – 2021</span>
+                            <span class="mb-1">{{ exp5_date }}</span>
                         </div>
                         <div class="inst-card-body">
                             <div class="inst-card-header mb-3">
-                                <h5 class="inst-card-title mb-1">Sinqia</h5>
+                                <h5 class="inst-card-title mb-1">{{ exp5_title }}</h5>
                                 <span class="mx-2">•</span>
-                                <span>Desenvolvedor Web</span>
+                                <span>{{ exp5_role }}</span>
                             </div>
                             <div class="inst-card-main mb-3">
                                 <p>
-                                    Responsável pelo desenvolvimento de melhorias e sustentação do sistema de gerenciamento de contratos, na área de previdência.
+                                    {{ exp5_desc }}
                                 </p>
                             </div>
                             <div class="inst-card-footer py-1">
                                 <ul>
-                                    <li><span class="tag">ASP.NET</span></li>
+                                    <li><span class="tag">C#</span></li>
+                                    <li><span class="tag">Windows Forms</span></li>
                                     <li><span class="tag">SQL Server</span></li>
                                     <li><span class="tag">Oracle</span></li>
-                                    <li><span class="tag">Forms</span></li>
-                                    <li><span class="tag">Git</span></li>
+                                    <li><span class="tag">Scrum</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -191,25 +230,26 @@
 
                     <div class="inst-card">
                         <div class="inst-card-icon">
-                            <span class="mb-1">2018 – 2019</span>
+                            <span class="mb-1">{{ exp2_date }}</span>
                         </div>
                         <div class="inst-card-body">
                             <div class="inst-card-header mb-3">
-                                <h5 class="inst-card-title mb-1">BRZ Dataware</h5>
+                                <h5 class="inst-card-title mb-1">{{ exp2_title }}</h5>
                                 <span class="mx-2">•</span>
-                                <span>Desenvolvedor Web</span>
+                                <span>{{ exp6_role }}</span>
                             </div>
                             <div class="inst-card-main mb-3">
                                 <p>
-                                    Participei do princípio do planejamento até a sustentação do sistema de field service. Responsável por analisar requisitos e desenvolver módulos e funcionalidades completas, seguindo com a sustentação.
+                                    {{ exp6_desc }}
                                 </p>
                             </div>
                             <div class="inst-card-footer py-1">
                                 <ul>
-                                    <li><span class="tag">ASP.NET</span></li>
+                                    <li><span class="tag">C#</span></li>
+                                    <li><span class="tag">ASP.NET MVC</span></li>
                                     <li><span class="tag">SQL Server</span></li>
-                                    <li><span class="tag">Telerik</span></li>
-                                    <li><span class="tag">Git</span></li>
+                                    <li><span class="tag">JavaScript</span></li>
+                                    <li><span class="tag">CSS</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -218,21 +258,21 @@
                 </section>
                 <section id="formacao" nav-id="nav-formacao">
 
-                    <h3 class="section-title">Formação</h3>
+                    <h3 class="section-title">{{ section_education }}</h3>
 
                     <div class="inst-card">
                         <div class="inst-card-icon">
-                            <span class="mb-1">2026 – 2028</span>
+                            <span class="mb-1">{{ edu1_date }}</span>
                         </div>
                         <div class="inst-card-body">
                             <div class="inst-card-header mb-2">
-                                <h5 class="inst-card-title mb-1">Defesa Cibernética</h5>
+                                <h5 class="inst-card-title mb-1">{{ edu1_title }}</h5>
                                 <span class="mx-2">•</span>
-                                <span>Impacta</span>
+                                <span>{{ edu1_institution }}</span>
                             </div>
                             <div class="inst-card-footer py-1">
                                 <ul>
-                                    <li><span class="tag">Cursando</span></li>
+                                    <li><span class="tag">{{ edu1_status }}</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -240,17 +280,17 @@
                     
                     <div class="inst-card">
                         <div class="inst-card-icon">
-                            <span class="mb-1">2019 – 2021</span>
+                            <span class="mb-1">{{ edu2_date }}</span>
                         </div>
                         <div class="inst-card-body">
                             <div class="inst-card-header mb-2">
-                                <h5 class="inst-card-title mb-1">Ciência da Computação</h5>
+                                <h5 class="inst-card-title mb-1">{{ edu2_title }}</h5>
                                 <span class="mx-2">•</span>
-                                <span>UNIP</span>
+                                <span>{{ edu2_institution }}</span>
                             </div>
                             <div class="inst-card-footer py-1">
                                 <ul>
-                                    <li><span class="tag">Parcialmente concluído</span></li>
+                                    <li><span class="tag">{{ edu2_status }}</span></li>
                                 </ul>
                             </div>
                         </div>

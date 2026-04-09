@@ -112,6 +112,16 @@ header a {
     text-decoration: none;
 }
 
+#language-toggle {
+    cursor: pointer;
+    font-size: 1.3rem !important;
+    color: var(--text-secondary);
+}
+
+#language-toggle:hover {
+    color: var(--text-accent);
+}
+
 .nav-link {
     display: flex;
     align-items: center;
@@ -240,7 +250,26 @@ section {
     background: var(--highlight);
 }
 
+.fade-up-init {
+    opacity: 0;
+    transform: translateY(22px);
+    will-change: opacity, transform;
+}
 
+.fade-up-in {
+    animation: fadeUp 0.55s ease-out forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* OVERLAY GRADIENT  */
 body {
