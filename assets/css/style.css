@@ -260,6 +260,24 @@ section {
     animation: fadeUp 0.55s ease-out forwards;
 }
 
+.preload-hidden {
+    opacity: 0;
+}
+
+.preload-visible {
+    opacity: 1;
+    transition: opacity 0.14s ease-out;
+}
+
+.fade-swap {
+    opacity: 1;
+    transition: opacity 0.18s ease-in-out;
+}
+
+.fade-swap.fade-hidden {
+    opacity: 0.05;
+}
+
 @keyframes fadeUp {
     from {
         opacity: 0;

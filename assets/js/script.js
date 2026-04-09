@@ -78,10 +78,24 @@ function initEntryAnimation() {
 }
 
 async function toggleLanguage() {
+    const root = document.getElementById('total');
+    if (root) {
+        root.classList.add('fade-swap', 'fade-hidden');
+    }
+
     const translations = await loadTranslations();
+    await new Promise(resolve => setTimeout(resolve, 160));
+
     currentLanguage = currentLanguage === 'en' ? 'pt' : 'en';
     applyTranslations(translations, currentLanguage);
-    document.getElementById('lang-indicator').textContent = currentLanguage.toUpperCase();
+    const langIndicator = document.getElementById('lang-indicator');
+    if (langIndicator) {
+        langIndicator.textContent = currentLanguage.toUpperCase();
+    }
+
+    if (root) {
+        root.classList.remove('fade-hidden');
+    }
 }
 
 // Load default language on page load
@@ -90,6 +104,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     initEntryAnimation();
     const translations = await loadTranslations();
     applyTranslations(translations, currentLanguage);
+    const total = document.getElementById('total');
+    if (total) {
+        total.classList.remove('preload-hidden');
+        total.classList.add('preload-visible');
+    }
 });
 
 // Active navigation link logic
