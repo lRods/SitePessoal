@@ -1,4 +1,8 @@
 {
+    "header_sub_title": {
+        "pt": "Desenvolvedor .NET Sênior",
+        "en": "Senior .NET Developer"
+    },
     "header_description": {
         "pt": "Desenvolvedor de software com foco em aplicações web, backend e integração de sistemas. Experiência com .NET, JavaScript, bancos de dados relacionais e interesse crescente em cibersegurança.",
         "en": "Software developer focused on web applications, backend development and system integration. Experience with .NET, JavaScript, relational databases and growing interest in cybersecurity."
@@ -48,7 +52,7 @@
         "en": "CCAB"
     },
     "exp1_role": {
-        "pt": "Senior .NET Developer (Contract)",
+        "pt": "Desenvolvedor .NET Sênior (Contrato)",
         "en": "Senior .NET Developer (Contract)"
     },
     "exp1_desc": {
@@ -64,7 +68,7 @@
         "en": "BRZ Dataware"
     },
     "exp2_role": {
-        "pt": "Senior .NET Developer",
+        "pt": "Desenvolvedor .NET Sênior",
         "en": "Senior .NET Developer"
     },
     "exp2_desc": {
@@ -80,7 +84,7 @@
         "en": "DO'r Consultoria"
     },
     "exp3_role": {
-        "pt": "Full Stack .NET Developer",
+        "pt": "Desenvolvedor .NET Full Stack",
         "en": "Full Stack .NET Developer"
     },
     "exp3_desc": {
@@ -96,7 +100,7 @@
         "en": "Freelancer"
     },
     "exp4_role": {
-        "pt": "Freelance .NET Developer",
+        "pt": "Desenvolvedor .NET Freelancer",
         "en": "Freelance .NET Developer"
     },
     "exp4_desc": {
@@ -112,7 +116,7 @@
         "en": "Sinqia"
     },
     "exp5_role": {
-        "pt": "Junior .NET Developer",
+        "pt": "Desenvolvedor .NET Júnior",
         "en": "Junior .NET Developer"
     },
     "exp5_desc": {
@@ -128,7 +132,7 @@
         "en": "BRZ Dataware"
     },
     "exp6_role": {
-        "pt": "Junior .NET Developer",
+        "pt": "Desenvolvedor .NET Júnior",
         "en": "Junior .NET Developer"
     },
     "exp6_desc": {

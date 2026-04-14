@@ -354,6 +354,7 @@ body {
 
     main {
         width: 100%;
+        padding-top: calc(var(--spacing) / 2);
     }
 
     header ul {
@@ -368,6 +369,7 @@ body {
         top: 0;
         margin-bottom: 0;
         padding: 1rem 2rem;
+        padding-left: 0;
         background-color: rgba(33, 26, 44, 0.80);
         backdrop-filter: blur(5px);
         z-index: 999;
